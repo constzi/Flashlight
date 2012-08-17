@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.google.ads.AdView
+        android:id="@+id/adMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a14fa82b0ee6c7f"
+        ads:loadAdOnCreate="true"
+        ads:refreshInterval="60"
+        ads:testDevices="TEST_EMULATOR, 0403681D05019010" />
+
+    <ImageButton
+        android:id="@+id/on_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lighton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ON" 
+        android:textSize="15dp" 
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/off_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lightoff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+</LinearLayout>
